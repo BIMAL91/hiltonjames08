@@ -1,2 +1,90 @@
 
+header{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+  }
 
+  .navbar-toggler-icon {
+    color: rgb(0, 0, 0); /* Change the color of the toggler icon */
+  }
+
+  .navbar-toggler {
+    background-color: white; /* Background color of the button */
+    border: none; /* Remove the button border */
+  }
+
+  .navbar-toggler:focus {
+    outline: none; /* Remove focus outline on click */
+  }
+
+  /* .navbar-toggler:hover {
+    background-color: rgba(255, 0, 0, 0.1); 
+  } */
+
+  .navbar {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    /* background-color: transparent; */
+  }
+
+  .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+  }
+  .nav-item {
+    color: white;
+    padding-left: 30px;
+    font-size: 16px;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Ensure the image is responsive within the container */
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -70px;
+  }
+  .banner {
+    padding-top: 100px;
+  }
+  .text-heading1 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+  }
+  .text-heading2 {
+    color: black;
+    text-align: justify;
+    padding-top: 10px;
+  }
+  .text-heading3 {
+    color: white;
+    text-align: justify;
+    padding-top: 25px;
+    line-height: 30px;
+  }
+  .border-column {
+    border: 2px solid black;
+    padding: 20px;
+  }
+  .about-content{
+    padding-top: 100px;
+  }
+  .heading1{
+    color:white;
+    padding-top: 50px;
+  }
