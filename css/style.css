@@ -10,6 +10,32 @@ body {
     padding: 0;
     /* overflow: hidden; */
   }
+  /* Custom CSS to make the navbar menu push content down */
+@media (max-width: 768px) {
+  .navbar.fixed-top {
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+  }
+
+  /* .navbar-collapse.collapse {
+      position: absolute;
+      top: 100%; 
+      left: 0;
+      right: 0;
+      z-index: 1031; 
+      visibility: hidden; 
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear; 
+  } */
+
+
+  .navbar-toggler[aria-expanded="true"] ~ .navbar-collapse.collapse {
+      visibility: visible;
+      opacity: 1;
+  }
+}
+
 
   .navbar-toggler-icon {
     color: rgb(0, 0, 0); /* Change the color of the toggler icon */
@@ -38,7 +64,7 @@ body {
   .navbar-nav .nav-link {
     color: rgb(255, 255, 255);
   }
-  .nav-item {
+  ul li a {
     color: white;
     padding-left: 30px;
     font-size: 16px;
@@ -78,7 +104,7 @@ body {
     line-height: 30px;
   }
   .border-column {
-    border: 2px solid black;
+    
     padding: 20px;
   }
   .about-content{
