@@ -1,21 +1,20 @@
-
-header{
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+header {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 body {
-    margin: 0;
-    padding: 0;
-    /* overflow: hidden; */
-  }
-  /* Custom CSS to make the navbar menu push content down */
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+/* Custom CSS to make the navbar menu push content down */
 @media (max-width: 768px) {
   .navbar.fixed-top {
-      position: sticky;
-      top: 0;
-      z-index: 1030;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
   }
 
   /* .navbar-collapse.collapse {
@@ -29,91 +28,273 @@ body {
       transition: visibility 0s, opacity 0.5s linear; 
   } */
 
-
   .navbar-toggler[aria-expanded="true"] ~ .navbar-collapse.collapse {
-      visibility: visible;
-      opacity: 1;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
+.navbar-toggler-icon {
+  color: rgb(0, 0, 0); /* Change the color of the toggler icon */
+}
 
-  .navbar-toggler-icon {
-    color: rgb(0, 0, 0); /* Change the color of the toggler icon */
-  }
+.navbar-toggler {
+  background-color: white; /* Background color of the button */
+  border: none; /* Remove the button border */
+}
 
-  .navbar-toggler {
-    background-color: white; /* Background color of the button */
-    border: none; /* Remove the button border */
-  }
+.navbar-toggler:focus {
+  outline: none; /* Remove focus outline on click */
+}
 
-  .navbar-toggler:focus {
-    outline: none; /* Remove focus outline on click */
-  }
-
-  /* .navbar-toggler:hover {
+/* .navbar-toggler:hover {
     background-color: rgba(255, 0, 0, 0.1); 
   } */
 
-  .navbar {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    /* background-color: transparent; */
-  }
+.navbar {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  /* background-color: transparent; */
+}
 
-  .navbar-nav .nav-link {
-    color: rgb(255, 255, 255);
-  }
-  ul li a {
-    color: white;
-    padding-left: 30px;
-    font-size: 16px;
-  }
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+ul li a {
+  color: white;
+  padding-left: 30px;
+  font-size: 16px;
+}
 
-  .image-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
+.image-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 
-  /* Ensure the image is responsive within the container */
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-top: -70px;
-  }
-  .banner {
-    padding-top: 100px;
-  }
-  .text-heading1 {
-    color: white;
-    text-align: center;
-    font-size: 18px;
-  }
-  .text-heading2 {
-    color: black;
-    text-align: justify;
-    padding-top: 10px;
-  }
-  .text-heading3 {
-    color: white;
-    text-align: justify;
-    padding-top: 25px;
-    line-height: 30px;
-  }
-  .border-column {
-    
-    padding: 20px;
-  }
-  .about-content{
-    padding-top: 100px;
-  }
-  .heading1{
-    color:white;
-    padding-top: 50px;
-  }
-.img-hilton{
+/* Ensure the image is responsive within the container */
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: -70px;
+}
+.banner {
+  padding-top: 100px;
+}
+.text-heading1 {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+.text-heading2 {
+  color: black;
+  text-align: justify;
+  padding-top: 10px;
+}
+.text-heading3 {
+  color: white;
+  text-align: justify;
+  padding-top: 25px;
+  line-height: 30px;
+}
+.border-column {
+  padding: 20px;
+}
+.about-content {
+  padding-top: 100px;
+}
+.heading1 {
+  color: white;
+  padding-top: 50px;
+}
+.img-hilton {
   margin-top: 20px;
+}
+
+/* Add 3D tilt effect to the entire section container */
+#clients {
+  padding: 60px 0;
+  perspective: 1000px; /* Set the perspective for the section */
+  position: relative; /* Add relative positioning */
+}
+
+/* Style for the section header */
+#clients .section-header {
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+  transform: translateZ(30px); /* Apply a slight 3D translation */
+}
+
+/* Add 3D tilt effect to the client logos */
+#clients .clients-wrap {
+  border-top: 1px solid #d6eaff;
+  border-left: 1px solid #d6eaff;
+  margin-bottom: 30px;
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+#clients .client-logo {
+  padding: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff;
+  overflow: hidden;
+  background: #fff;
+  height: 160px;
+  position: relative; /* Add relative positioning */
+  transform: translateZ(30px); /* Apply a slight 3D translation */
+}
+
+#clients img {
+  transition: all 0.4s ease-in-out;
+  transform: rotateY(0deg) scale(1); /* Initial rotation and scale */
+  transform-origin: center center;
+}
+
+#clients .client-logo:hover img {
+  transform: rotateY(10deg) scale(1.1); /* Hover effect: Rotate and scale */
+}
+
+.section-header h3 {
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+
+.section-header p {
+  /* text-align: center; */
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%;
+}
+
+#clients {
+  padding: 60px 0;
+}
+#clients .clients-wrap {
+  border-top: 1px solid #d6eaff;
+  border-left: 1px solid #d6eaff;
+  margin-bottom: 30px;
+}
+
+#clients .client-logo {
+  padding: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff;
+  overflow: hidden;
+  background-color: rgb(147, 147, 147);
+  height: 160px;
+  box-shadow: 0px 0px 10px rgba(247, 246, 246, 0.5); /* Add the box shadow */
+}
+
+#clients img {
+  transition: all 0.4s ease-in-out;
+}
+.section-bg {
+  margin-top: 100px;
+}
+/* consulting page */
+.service-bg {
+  padding-top: 100px;
+  color: white; /* Set text color to white */
+}
+.service-bg ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+.service-bg li {
+  margin-bottom: 10px; /* Add some space between list items */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* ends consulting page */
+
+.service-bg {
+  padding-top: 100px;
+}
+/* Add 3D tilt effect to the entire section container */
+.card {
+  cursor: pointer;
+}
+.hd {
+  font-size: 25px;
+  font-weight: 550;
+}
+.card.hover,
+.card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.img {
+  margin-bottom: 35px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.card-title {
+  font-weight: 600;
+}
+button.focus,
+button:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+.ft {
+  margin-top: 25px;
+}
+.chk {
+  margin-bottom: 5px;
+}
+.rck {
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+.card-subtitle p {
+  font-size: 14px;
+  line-height: 10px;
+}
+.card-row {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding-top: 0px !important;
+  }
+
+  .heading1 {
+    font-size: 28px;
+  }
+
+  .text-heading3 {
+    font-size: 14px;
+  }
 }
